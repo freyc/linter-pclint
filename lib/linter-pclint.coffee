@@ -9,14 +9,14 @@ class LinterPclint extends Linter
 
   # A string, list, tuple or callable that returns a string, list or tuple,
   # containing the command line (with arguments) used to lint.
-  cmd: 'flint -b -v -hF1 -width\[0\] -format="%t:%f:%l:%c:%n %m"'
+  cmd: 'flint -b -v -hF1 -width\[0\] -format="%t:%f:%l:%c:%n %m" -u -e830'
 
   executablePath: null
 
   linterName: 'flint'
 
   # A regex pattern used to extract information from the executable's output.
-  regex: '((?<error>Error)|(?<warning>Warning)):(?<file>.*):(?<line>[0-9]+):(?<col>[0-9]+):(?<message>.*)'
+  regex: '((?<error>Error)|(?<warning>(Warning|Info))):(?<file>.*):(?<line>[0-9]+):(?<col>[0-9]+):(?<message>.*)'
   #regex: '.*line="(?<line>[0-9]+)" column="(?<col>[0-9]+)" severity="((?<error>error)|(?<warning>warning))" message="(?<message>.*)" source'
 
   standard: null
