@@ -1,0 +1,16 @@
+{
+  "name": "linter-pclint",
+  "version": "0.0.1",
+  "main": "./lib/init",
+  "linter-package": true,
+  "activationEvents": [],
+  "description": "lint using pclint",
+
+  "repository": "https://github.com/freyc/linter-pclint",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}
